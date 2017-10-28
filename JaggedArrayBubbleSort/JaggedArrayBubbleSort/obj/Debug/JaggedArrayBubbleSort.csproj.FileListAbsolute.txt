@@ -1,0 +1,5 @@
+c:\users\роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\JaggedArrayBubbleSort\obj\Debug\JaggedArrayBubbleSort.csprojResolveAssemblyReference.cache
+C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\JaggedArrayBubbleSort\bin\Debug\JaggedArrayBubbleSort.dll
+C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\JaggedArrayBubbleSort\bin\Debug\JaggedArrayBubbleSort.pdb
+C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\JaggedArrayBubbleSort\obj\Debug\JaggedArrayBubbleSort.dll
+C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\JaggedArrayBubbleSort\obj\Debug\JaggedArrayBubbleSort.pdb

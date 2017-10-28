@@ -1,0 +1,9 @@
+C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\JaggedArrayBubbleSort.Tests\bin\Debug\JaggedArrayBubbleSort.Tests.dll
+C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\JaggedArrayBubbleSort.Tests\bin\Debug\JaggedArrayBubbleSort.Tests.pdb
+C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\JaggedArrayBubbleSort.Tests\bin\Debug\JaggedArrayBubbleSort.dll
+C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\JaggedArrayBubbleSort.Tests\bin\Debug\nunit.framework.dll
+C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\JaggedArrayBubbleSort.Tests\bin\Debug\JaggedArrayBubbleSort.pdb
+C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\JaggedArrayBubbleSort.Tests\bin\Debug\nunit.framework.xml
+C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\JaggedArrayBubbleSort.Tests\obj\Debug\JaggedArrayBubbleSort.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\JaggedArrayBubbleSort.Tests\obj\Debug\JaggedArrayBubbleSort.Tests.dll
+C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\JaggedArrayBubbleSort.Tests\obj\Debug\JaggedArrayBubbleSort.Tests.pdb
