@@ -1,8 +1,0 @@
-C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
-C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\ConsoleApp1\bin\Debug\ConsoleApp1.exe
-C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
-C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\ConsoleApp1\obj\Debug\ConsoleApp1.csprojResolveAssemblyReference.cache
-C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\ConsoleApp1\obj\Debug\ConsoleApp1.exe
-C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
-C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\ConsoleApp1\bin\Debug\JaggedArrayBubbleSort.dll
-C:\Users\Роман\documents\visual studio 2017\Projects\EPAM\JaggedArrayBubbleSort\ConsoleApp1\bin\Debug\JaggedArrayBubbleSort.pdb
