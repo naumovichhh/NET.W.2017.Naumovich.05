@@ -14,15 +14,16 @@ namespace Day5
             if (array == null)
                 throw new ArgumentNullException("array", "Null Reference");
             int border = array.Length, tempBorder = 0;
-            for (int i = 0; i < border - 1; ++i)
+            while (border != 0)
             {
-                if (NeedSwap(array[i], array[i + 1], sortMethod, sortOrder))
+                for (int i = 0; i < border - 1; ++i)
                 {
-                    Swap(ref array[i], ref array[i + 1]);
-                    tempBorder = i + 1;
+                    if (NeedSwap(array[i], array[i + 1], sortMethod, sortOrder))
+                    {
+                        Swap(ref array[i], ref array[i + 1]);
+                        tempBorder = i + 1;
+                    }
                 }
-                if (tempBorder == 0)
-                    break;
                 border = tempBorder;
                 tempBorder = 0;
             }

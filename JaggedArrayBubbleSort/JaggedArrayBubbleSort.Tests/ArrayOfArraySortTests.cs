@@ -10,7 +10,7 @@ namespace Day5.Tests
     public static class ArrayOfArraySortTests
     {
         [Test, TestCaseSource("TestCases")]
-        public static void SortTest(int[][] array1, int[][] array2, SortMethod method, SortOrder order)
+        public static void SortTest(int testNum, int[][] array1, int[][] array2, SortMethod method, SortOrder order)
         {
             ArrayOfArraySort.Sort(array2, method, order);
             Assert.AreEqual(array1, array2);
@@ -18,11 +18,11 @@ namespace Day5.Tests
 
         static object[] TestCases =
         {
-            new object[] { ArrayContainer.Instance.array1SortedSum, ArrayContainer.Instance.array1, SortMethod.BySum, SortOrder.Ascending},
-            new object[] { ArrayContainer.Instance.array1SortedMin, ArrayContainer.Instance.array1, SortMethod.ByMin, SortOrder.Ascending},
-            new object[] { ArrayContainer.Instance.array2SortedSum, ArrayContainer.Instance.array2, SortMethod.BySum, SortOrder.Ascending},
-            new object[] { ArrayContainer.Instance.array2SortedMax, ArrayContainer.Instance.array2, SortMethod.ByMax, SortOrder.Ascending},
-            new object[] { ArrayContainer.Instance.array3SortedSum, ArrayContainer.Instance.array3, SortMethod.BySum, SortOrder.Ascending}
+            new object[] { 0, ArrayContainer.Instance.array1SortedSum, ArrayContainer.Instance.array1, SortMethod.BySum, SortOrder.Ascending},
+            new object[] { 1, ArrayContainer.Instance.array1SortedMin, ArrayContainer.Instance.array1, SortMethod.ByMin, SortOrder.Ascending},
+            new object[] { 2, ArrayContainer.Instance.array2SortedSum, ArrayContainer.Instance.array2, SortMethod.BySum, SortOrder.Ascending},
+            new object[] { 3, ArrayContainer.Instance.array2SortedMax, ArrayContainer.Instance.array2, SortMethod.ByMax, SortOrder.Ascending},
+            new object[] { 4, ArrayContainer.Instance.array3SortedSum, ArrayContainer.Instance.array3, SortMethod.BySum, SortOrder.Ascending}
         };
 
     }
