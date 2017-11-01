@@ -73,6 +73,28 @@ namespace Day5
             return new Polynomial(resultCoeffs);
         }
 
+        public static Polynomial operator -(Polynomial x, Polynomial y)
+        {
+            int maxLen = x.coeffs.Length;
+            if (y.coeffs.Length > maxLen)
+                maxLen = y.coeffs.Length;
+            double[] resultCoeffs = new double[maxLen];
+            for (int i = 0; i < maxLen; ++i)
+            {
+                double xVal, yVal;
+                if (i < x.coeffs.Length)
+                    xVal = x.coeffs[i];
+                else
+                    xVal = 0;
+                if (i < y.coeffs.Length)
+                    yVal = y.coeffs[i];
+                else
+                    yVal = 0;
+                resultCoeffs[i] = xVal - yVal;
+            }
+            return new Polynomial(resultCoeffs);
+        }
+
         public override string ToString()
         {
             StringBuilder builder = new StringBuilder();
