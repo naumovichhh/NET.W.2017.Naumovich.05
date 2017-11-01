@@ -10,21 +10,115 @@ namespace Day5.Tests
     public static class ArrayOfArraySortTests
     {
         [Test, TestCaseSource("TestCases")]
-        public static void SortTest(int testNum, int[][] array1, int[][] array2, SortMethod method, SortOrder order)
+        public static void SortTest(int testNum, int[][] array1, int[][] array2,
+            IComparer<IEnumerable<int>> comparer, SortOrder order)
         {
-            ArrayOfArraySort.Sort(array2, method, order);
+
+            ArrayOfArraySort.Sort(array2, comparer, order);
             Assert.AreEqual(array1, array2);
         }
 
         static object[] TestCases =
         {
-            new object[] { 0, ArrayContainer.Instance.array1SortedSum, ArrayContainer.Instance.array1, SortMethod.BySum, SortOrder.Ascending},
-            new object[] { 1, ArrayContainer.Instance.array1SortedMin, ArrayContainer.Instance.array1, SortMethod.ByMin, SortOrder.Ascending},
-            new object[] { 2, ArrayContainer.Instance.array2SortedSum, ArrayContainer.Instance.array2, SortMethod.BySum, SortOrder.Ascending},
-            new object[] { 3, ArrayContainer.Instance.array2SortedMax, ArrayContainer.Instance.array2, SortMethod.ByMax, SortOrder.Ascending},
-            new object[] { 4, ArrayContainer.Instance.array3SortedSum, ArrayContainer.Instance.array3, SortMethod.BySum, SortOrder.Ascending}
+            new object[] { 0, ArrayContainer.Instance.array1SortedSum, ArrayContainer.Instance.array1,
+                new ComparerSum<IEnumerable<int>>(), SortOrder.Ascending},
+            new object[] { 1, ArrayContainer.Instance.array1SortedMin, ArrayContainer.Instance.array1,
+                new ComparerMin<IEnumerable<int>>(), SortOrder.Ascending},
+            new object[] { 2, ArrayContainer.Instance.array2SortedSum, ArrayContainer.Instance.array2,
+                new ComparerSum<IEnumerable<int>>(), SortOrder.Ascending},
+            new object[] { 3, ArrayContainer.Instance.array2SortedMax, ArrayContainer.Instance.array2,
+                new ComparerMax<IEnumerable<int>>(), SortOrder.Ascending},
+            new object[] { 4, ArrayContainer.Instance.array3SortedSum, ArrayContainer.Instance.array3,
+                new ComparerSum<IEnumerable<int>>(), SortOrder.Ascending}
         };
+    }
 
+    public class ComparerSum<T> : IComparer<T> where T : IEnumerable<int>
+    {
+        public int Compare(T x, T y)
+        {
+            if (x == null && y == null)
+                return 0;
+            if (x == null && y != null)
+                return -1;
+            if (x != null && y == null)
+                return 1;
+
+            int sumX = 0, sumY = 0;
+            foreach (int element in x)
+            {
+                sumX += element;
+            }
+            foreach (int element in y)
+            {
+                sumY += element;
+            }
+            if (sumX > sumY)
+                return 1;
+            if (sumX < sumY)
+                return -1;
+            return 0;
+        }
+    }
+
+    public class ComparerMax<T> : IComparer<T> where T : IEnumerable<int>
+    {
+        public int Compare(T x, T y)
+        {
+            if (x == null && y == null)
+                return 0;
+            if (x == null && y != null)
+                return -1;
+            if (x != null && y == null)
+                return 1;
+
+            int maxX = int.MinValue, maxY = int.MinValue;
+            foreach (int element in x)
+            {
+                if (element > maxX)
+                    maxX = element;
+            }
+            foreach (int element in y)
+            {
+                if (element > maxY)
+                    maxY = element;
+            }
+            if (maxX > maxY)
+                return 1;
+            if (maxX < maxY)
+                return -1;
+            return 0;
+        }
+    }
+
+    public class ComparerMin<T> : IComparer<T> where T : IEnumerable<int>
+    {
+        public int Compare(T x, T y)
+        {
+            if (x == null && y == null)
+                return 0;
+            if (x == null && y != null)
+                return -1;
+            if (x != null && y == null)
+                return 1;
+
+            int minX = int.MaxValue, minY = int.MaxValue;
+            foreach (int element in x)
+            {
+                if (element < minX)
+                    minX = element;
+            }
+            foreach (int element in y)
+            {
+                if (element < minY)
+                    minY = element;
+            }
+            if (minX > minY)
+                return 1;
+            if (minX < minY)
+                return -1;
+            return 0;
+        }
     }
 
     public class ArrayContainer
