@@ -1,0 +1,5 @@
+c:\users\роман\documents\visual studio 2017\Projects\EPAM\Polynomial\Polynomial\bin\Debug\Polynomial.dll
+c:\users\роман\documents\visual studio 2017\Projects\EPAM\Polynomial\Polynomial\bin\Debug\Polynomial.pdb
+c:\users\роман\documents\visual studio 2017\Projects\EPAM\Polynomial\Polynomial\obj\Debug\Polynomial.csprojResolveAssemblyReference.cache
+c:\users\роман\documents\visual studio 2017\Projects\EPAM\Polynomial\Polynomial\obj\Debug\Polynomial.dll
+c:\users\роман\documents\visual studio 2017\Projects\EPAM\Polynomial\Polynomial\obj\Debug\Polynomial.pdb
