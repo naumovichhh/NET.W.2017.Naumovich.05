@@ -6,9 +6,18 @@ using System.Threading.Tasks;
 
 namespace Day5
 {
+    /// <summary>
+    /// Implements jagged int array sorting using given comparer
+    /// </summary>
     public static class ArrayOfArraySort
     {
-        public static void Sort(int[][] array, IComparer<int[]> comparer, SortOrder sortOrder = SortOrder.Ascending)
+        /// <summary>
+        /// Implementation of jagged int array sorting using given comparer
+        /// </summary>
+        /// <param name="array">Source jagged int array</param>
+        /// <param name="comparer">Implements comparation</param>
+        /// <param name="sortOrder">Straight or reverse sorting order</param>
+        public static void Sort(int[][] array, IComparer<int[]> comparer, SortOrder sortOrder = SortOrder.Straight)
         {
             if (array == null)
                 throw new ArgumentNullException("array", "Null Reference");
@@ -30,12 +39,12 @@ namespace Day5
 
         private static bool NeedSwap(int[] low, int[] high, IComparer<int[]> comparer, SortOrder order)
         {
-            if (order == SortOrder.Ascending)
+            if (order == SortOrder.Straight)
                 if (comparer.Compare(low, high) > 0)
                     return true;
                 else
                     return false;
-            else if (order == SortOrder.Descending)
+            else if (order == SortOrder.Reverse)
                 if (comparer.Compare(low, high) < 0)
                     return true;
                 else
@@ -52,5 +61,9 @@ namespace Day5
         }
     }
     
-    public enum SortOrder { Ascending, Descending }
+    public enum SortOrder
+    {
+        Straight,
+        Reverse
+    }
 }
